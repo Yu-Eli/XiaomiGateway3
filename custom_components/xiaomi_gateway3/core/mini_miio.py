@@ -163,8 +163,8 @@ class SyncmiIO(BasemiIO):
 
         if self.debug:
             _LOGGER.debug(
-                f"{self.addr[0]} | Send {method} {len(raw_send)}B, "
-                f"recv {len(raw_recv)}B in {t:.1f} sec and {times} try"
+                f"{self.addr[0]} | Send {method} {params} {len(raw_send)}B, "
+                f"recv {data} {len(raw_recv)}B in {t:.1f} sec and {times} try"
             )
 
         if 'result' in data:
